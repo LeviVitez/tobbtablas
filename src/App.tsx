@@ -27,6 +27,7 @@ class App extends React.Component {
               <Route path='profile'></Route>
               <Route path='settings'></Route>
           </Route>
+          <Route path='products'></Route>
           <Route path='/*' element={<p>ilyen oldal nincs</p>}></Route>
         </Routes>
       </main>
