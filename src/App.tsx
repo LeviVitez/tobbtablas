@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import { Link, Route, Routes } from 'react-router-dom';
+import { Link, Navigate, Route, Routes } from 'react-router-dom';
 
 class App extends React.Component {
 
@@ -25,7 +25,9 @@ class App extends React.Component {
           <Route path='/about' element={<p>Elérhetőségek, rólunk stb.</p>} />
           <Route path='/user'>
               <Route path='profile'></Route>
+              <Route path='settings'></Route>
           </Route>
+          <Route path='/*' element={<p>ilyen oldal nincs</p>}></Route>
         </Routes>
       </main>
     </div>
